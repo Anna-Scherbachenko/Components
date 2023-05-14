@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+::placeholder {
+    color: aliceblue;
+    font-family: inherit;
+}
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+body {
+    background: #E8CBC0;
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);
+    background: linear-gradient(to right, #636FA4, #E8CBC0);
+    color: aliceblue;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+    color: aliceblue;
+    background: transparent;
+    border-radius: 3px;
+}
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+select {
+    border: 1px solid;
+    border-color: aliceblue;
+}
+select:focus, textarea:focus, .form-group input:focus, .buttons input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgb(240 248 255 /30%);
+    transition: 0.4s;
+    border-color: transparent;
+}
+form {
+    margin: 0 auto;
+    width: 500px;
+    user-select: none;
+}
+option {
+    color: aliceblue;
+    background: rgb(101 112 164 /70%);
+}
+
+textarea {
+    border: 1px solid ;
+    border-color: aliceblue;
+    padding: 0.275rem 0.55rem;
+    resize: none;
+}
+fieldset {
+   border: 1px solid;
+    border-color: aliceblue;
+   margin: 15px 0; 
+   border-radius: 3px;
+}
+legend {
+    font-variant: small-caps;
+    font-size: 24px;
+}
+.form-group {
+    display: flex;
+    align-items: stretch;
+    margin: 8px 0;
+}
+.form-group label {
+    cursor: pointer;
+    min-width: 90px;
+    text-align: left;
+}
+.form-group input {
+    border-radius: 3px;
+    padding: 0.275rem 0.55rem;
+    border: 1px solid;
+    border-color: aliceblue;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}  
+
+input:hover, textarea:hover, .buttons input:hover {
+    background: rgb(101 112 164 /30%);
+    transition: .4s;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+.radio-group p {
+    margin-right: 26px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+}
+.input-group span {
+    border: 1px solid;
+    border-color: aliceblue;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 0.163rem 0.35rem;
+    border-right: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+
+}
+.buttons input {
+    padding: 0.275rem 0.55rem;
+    border: 1px solid ;
+    border-color: aliceblue;
+}
+.buttons input:first-child {
+    margin-right: 10px;
+}
+
+/* Icons */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
